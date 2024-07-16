@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Monsieur+La+Doulaise&display=swap');
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container{
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-box{
+    width: 700px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#outer-large{
+    position: absolute;
+    border: 10px solid rgb(27, 13, 49);
+    width: 690px;
+    height: 290px;
+    margin: 0;
+    padding: 0;
+}
+
+#outer-small{
+    position: absolute;
+    border: 5px solid rgb(89, 38, 172);
+    width: 690px;
+    height: 290px;
+    margin: 5px 0px 0px 5px ;
+    padding: 0;
+}
+
+#top-heading-section{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin-top: -150px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+#icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: rgb(238, 147, 74);
+}
+#main-heading{
+    width: 290px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#main-heading>h1{
+    font-size: 1.6rem;
+}
+
+#mid-section{
+
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#background-text{
+    background-color: rgb(151, 55, 6);
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.receiver-name{
+    display: grid;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    text-align: start;
+}
+
+.receiver-name>p{
+    font-size: 2.3rem;
+    font-family: "Arizonia", cursive;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+#bottom-section{
+    position: absolute;
+    /* border: 1px solid red; */
+    background-color: transparent;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 190px 0 0 0;
+    padding: 0;
+}
+
+#bottom-heading{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+#bottom-heading>p{
+    padding: 0;
+    margin: 0;
+}
+#bottom-text{
+    text-align: center;
+}
+#bottom-text>p{
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+#square1{
+    position: absolute;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 120px solid rgb(238, 147, 74);
+    z-index: 10;
+    margin: 237px 0 0 548px ;
+    transform: rotate(-45deg);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #inside-thing-s1{
+    position: absolute;
+    background-color: white;
+    margin: 250px 0 0 648px ;
+    transform: rotate(-45deg);
+    z-index: 11;
+} */

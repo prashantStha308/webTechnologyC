@@ -8,10 +8,7 @@
 </head>
 <body>
 
-    <div id="main-container">
-
-        <div id="square1" class="element"></div>
-        <div class="element" id="inside-thing-s1" ></div>
+    <div id="mainContainer">
 
         <div id="main-box">
             <div id="outer-large"></div>
@@ -36,8 +33,8 @@
                 This Certificate is Proudly Presented To:
             </div>
 
-            <div class="receiver-name">
-                <p> Mr.Prashant Stha </p>
+            <div class="receiverName">
+                <p id="receive"> Mr.Prashant Stha </p>
             </div>
         </div>
 
@@ -45,15 +42,30 @@
 
         <div id="bottom-section">
             <div id="bottom-heading">
-                <p> By <span id="companyName">(company Name)</span>: </p>
+                <p> By <span class="companyName">(company Name)</span>: </p>
             </div>
             <div id="bottom-text">
-                <p>For attending and completing the 7Days Workshop by <br><span id="companyName">(company Name)</span>. </p>
+                <p>For attending and completing the 7Days Workshop by <br><span class="companyName">(company Name)</span>. </p>
             </div>
         </div>
 
     </div>
-    
+
+    <div id="noPrint">
+        <div id="company">
+            <label for="getCompanyName">Company Name: </label>
+            <input type="text" id="getCompanyName" placeholder="Artfolio.inc">
+            <button type="submit" onclick="getCompanyName()"> Submit </button>
+        </div>
+        <div id="receiver">
+            <label for="getReceiverName"> Receiver Name: </label>
+            <input type="text" id="getReceiverName" placeholder="Mr.Prashant Shrestha">
+            <button type="submit" onclick="getReceiverName()"> Submit </button>
+        </div>
+    </div>
+    <div id="print-btn-container">
+        <button id="print" onclick="printCertificate('mainContainer')"> Print Certificate </button>
+    </div>
 
     <script src="./script.js"></script>
 

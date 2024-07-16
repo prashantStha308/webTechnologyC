@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 
-#main-container{
+#mainContainer{
     position: relative;
     width: 700px;
     height: 300px;
@@ -38,7 +38,7 @@ body{
 
 #outer-small{
     position: absolute;
-    border: 5px solid rgb(89, 38, 172);
+    border: 5px solid #e52e71;
     width: 690px;
     height: 290px;
     margin: 5px 0px 0px 5px ;
@@ -89,18 +89,19 @@ body{
     text-align: center;
 }
 
-.receiver-name{
+.receiverName{
     display: grid;
     justify-content: center;
     border-bottom: 1px solid black;
     text-align: start;
 }
 
-.receiver-name>p{
+.receiverName>p{
     font-size: 2.3rem;
     font-family: "Arizonia", cursive;
     margin: 10px 0 0 0;
     padding: 0;
+    color: #ff8a00;
 }
 
 #bottom-section{
@@ -133,23 +134,69 @@ body{
     font-weight: 550;
 }
 
-#square1{
-    position: absolute;
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    border-top: 120px solid rgb(238, 147, 74);
-    z-index: 10;
-    margin: 237px 0 0 548px ;
-    transform: rotate(-45deg);
-    display: grid;
+#company{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* #inside-thing-s1{
-    position: absolute;
-    background-color: white;
-    margin: 250px 0 0 648px ;
-    transform: rotate(-45deg);
-    z-index: 11;
-} */
+label[for="getCompanyName"]{
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: rgb(151, 55, 6);
+}
+
+#getCompanyName{
+    outline: none;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    margin-left: 5px;
+}
+
+#receiver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label[for="getReceiverName"]{
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: rgb(151, 55, 6);
+}
+
+#getReceiverName{
+    outline: none;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    margin-left: 5px;
+}
+
+button{
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #973706;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+
+button:hover{
+    background-color: #ff8a00;
+}
+
+#print-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#print-btn-container>button{
+    font-size: 1.2rem;
+}

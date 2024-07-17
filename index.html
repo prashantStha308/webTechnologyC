@@ -17,13 +17,13 @@
 
         <!-- Top Section -->
         <div id="top-heading-section">
-            <div id="icon"></div>
+            <div class="icon" id="giveIcon1"> icon </div>
 
             <div id="main-heading">
                 <h1>Certificate of Awknowldgement</h1>
             </div>
 
-            <div id="icon"></div>
+            <div class="icon" id="giveIcon2"> icon </div>
         </div>
         
         <!-- Mid Section -->
@@ -62,6 +62,21 @@
             <input type="text" id="getReceiverName" placeholder="Mr.Prashant Shrestha">
             <button type="submit" onclick="getReceiverName()"> Submit </button>
         </div>
+        <div id="getImage">
+            <div id="img1">
+                <label for="icon1"> Icon 1: </label>
+                <input type="file" accept="image/*" id="icon1" >
+                <button type="submit" onclick="getIcon(1)"> Submit </button>
+            </div>
+
+            <div id="img2">
+                <label for="icon2"> Icon 2: </label>
+                <input type="file" accept="image/*" id="icon2" >
+                <button type="submit" onclick="getIcon(2)"> Submit </button>
+            </div>
+
+        </div>
+
     </div>
     <div id="print-btn-container">
         <button id="print" onclick="printCertificate('mainContainer')"> Print Certificate </button>

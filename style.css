@@ -60,14 +60,21 @@ body{
     height: 90px;
     border-radius: 100%;
     border: 3px solid rgb(238, 147, 74);
-    background-image: url("");
-    object-fit: cover;
+    /* background-image: url("");
+    background-position: center;
+    background-size: 80px;
+    object-fit: cover; */
     border-style: dashed;
     display: grid;
     justify-content: center;
     align-items: center;
     -webkit-print-color-adjust : exact;
 }
+
+.iconImg{
+    width: 100px;
+}
+
 #main-heading{
     width: 290px;
     margin-top: 15px;
@@ -219,6 +226,10 @@ button:hover{
     margin: 10px 0 0 0;
 }
 
+#lastTextContainer{
+    text-align: center;
+    font-size: 1.1rem;
+}
 
 @media print{
 

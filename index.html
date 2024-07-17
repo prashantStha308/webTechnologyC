@@ -17,7 +17,9 @@
 
         <!-- Top Section -->
         <div id="top-heading-section">
-            <div class="icon" id="giveIcon1"> icon </div>
+            <div class="icon" id="giveIcon1">
+                icon
+            </div>
 
             <div id="main-heading">
                 <h1>Certificate of Awknowldgement</h1>
@@ -67,19 +69,25 @@
                 <label for="icon1"> Icon 1: </label>
                 <input type="file" accept="image/*" id="icon1" >
                 <button type="submit" onclick="getIcon(1)"> Submit </button>
+                <button type="submit" onclick="reset(1)"> Clear Image </button>
             </div>
 
             <div id="img2">
                 <label for="icon2"> Icon 2: </label>
                 <input type="file" accept="image/*" id="icon2" >
                 <button type="submit" onclick="getIcon(2)"> Submit </button>
+                <button type="submit" onclick="reset(2)"> Clear Image </button>
+            </div>
+
+            <div id="lastTextContainer">
+                <p> Click on "Clear Image" to remove the existing image or to clear the dots </p>
             </div>
 
         </div>
 
     </div>
     <div id="print-btn-container">
-        <button id="print" onclick="printCertificate('mainContainer')"> Print Certificate </button>
+        <button id="print" onclick="printCertificate()"> Print Certificate </button>
     </div>
 
     <script src="./script.js"></script>
